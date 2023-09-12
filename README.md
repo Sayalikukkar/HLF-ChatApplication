@@ -14,10 +14,10 @@ https://hyperledger-fabric.readthedocs.io/en/release-2.5/prereqs.html
 Steps to setup Hyperledger Fabric Network 
 1. Clone or Download the repository
    
-       https://github.com/Sayalikukkar/HLF-ChatApplication.git
+       $ git clone https://github.com/Sayalikukkar/HLF-ChatApplication.git
 2. Run the following command to download docker images and binaries.
 
-       curl -sSL https://bit.ly/2ysbOFE | bash -s 
+       $ curl -sSL https://bit.ly/2ysbOFE | bash -s 
 
        
 
