@@ -9,4 +9,14 @@ A chat application system that provides its users the functionality to send/broa
 Follow prerequisites to run a Docker-based Fabric test network on your system<br/>
 https://hyperledger-fabric.readthedocs.io/en/release-2.5/prereqs.html
 
+###  Bring up the Network
+
+Steps to setup Hyperledger Fabric Network 
+1. Clone or Download the repository
+
+       
+
+
+
+
 
