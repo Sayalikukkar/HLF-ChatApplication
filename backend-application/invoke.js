@@ -19,7 +19,7 @@ module.exports = {
       const ccpPath = path.resolve(
         process.cwd(),
         "..",
-        "5G-Messaging-Fabric-Network",
+        "test-network",
         "organizations",
         "peerOrganizations",
         "org1.example.com",
@@ -75,7 +75,7 @@ module.exports = {
       const ccpPath = path.resolve(
         process.cwd(),
         "..",
-        "5G-Messaging-Fabric-Network",
+        "test-network",
         "organizations",
         "peerOrganizations",
         "org1.example.com",
@@ -133,7 +133,7 @@ module.exports = {
       const ccpPath = path.resolve(
         process.cwd(),
         "..",
-        "5G-Messaging-Fabric-Network",
+        "test-network",
         "organizations",
         "peerOrganizations",
         "org1.example.com",
@@ -190,7 +190,7 @@ module.exports = {
       const ccpPath = path.resolve(
         process.cwd(),
         "..",
-        "5G-Messaging-Fabric-Network",
+        "test-network",
         "organizations",
         "peerOrganizations",
         "org1.example.com",
