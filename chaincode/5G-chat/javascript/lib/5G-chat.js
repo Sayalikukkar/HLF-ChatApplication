@@ -26,6 +26,7 @@ class Chat extends Contract {
 
     return user;
   }
+  
   async fetchMessage(ctx, userId) {
     let userAsBytes = await ctx.stub.getState(userId);
     if (!userAsBytes || userAsBytes.toString().length <= 0) {

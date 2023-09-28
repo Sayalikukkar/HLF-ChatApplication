@@ -88,12 +88,51 @@ app.post("/api/sendMessage", async function (req, res) {
   };
 
   console.log(req.body);
-  let response = await invoke.register(request);
+  let response = await invoke.sendMessage(request);
   if (response) {
     if (response.status == 200) {
       res.status(response.status).send({ message: "Messsage send successful" });
     } else {
       res.status(response.status).send({ message: response.message });
+    }
+  }
+});
+
+app.post("/api/fetchMessage", async function (req, res) {
+  let request = {
+    chaincodeId: "chat",
+    fcn: "fetchMessage",
+
+    userId: req.body.userId,
+  };
+
+  console.log(req.body);
+  let response = await invoke.fetchMessage(request);
+  if (response) {
+    if (response.status == 200) {
+      res
+        .status(response.status)
+        .send({ message: "Messsage is read successfully" });
+    } else {
+      res.status(response.status).send({ message: response.message });
+    }
+  }
+});
+
+app.post("/api/fetchUser", async function (req, res) {
+  let request = {
+    chaincodeId: "chat",
+    fcn: "fetchUser",
+    userId: req.body.userId,
+  };
+
+  console.log(req.body);
+  let response = await invoke.fetchUser(request);
+  if (response) {
+    if (response.status == 200) {
+      res.status(response.status).send({ message: "Correct User" });
+    } else {
+      res.status(response.status).send({ message: "User Not found" });
     }
   }
 });
